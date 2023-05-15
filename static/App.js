@@ -9,6 +9,11 @@ function App() {
     fetchComments();
   }, []);
 
+  /*
+   faz o GET em todo os comentarios, em seguida,
+   altera o estado da variavel 'comments' via 
+   funcao setComments() usando o retorno da api.
+  */
   const fetchComments = async() => {
     try {
       axios.get('http://localhost:5000/api/comments')
@@ -20,6 +25,11 @@ function App() {
     }
   };
 
+  /*
+   faz um POST em formato JSON, em seguida,
+   altera o estado da variavel 'comments' via 
+   funcao setComments() usando o retorno da api.
+  */
   const addComment = async() => {
     try {
       axios.post('http://localhost:5000/api/comments', { text: newComment }, {
@@ -34,15 +44,16 @@ function App() {
     }
   };
 
+  // renderiza o componente <div>
   return (
     <div>
-      <h2>Comments</h2>
+      <h2>Comentarios</h2>
       <ul>
         {comments.map(comment => <li key={comment.id}>{comment.text}</li>)}
       </ul>
       <form onSubmit={addComment}>
         <input type="text" value={newComment} onChange={(e) => setNewComment(e.target.value)} />
-        <button type="submit">Add Comment</button>
+        <button type="submit">Add Comentario</button>
       </form>
     </div>
   );

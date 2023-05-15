@@ -1,4 +1,4 @@
 *dev/
-*__pycache__/
+*frontend/
 
-frontend/*
+*__pycache__/

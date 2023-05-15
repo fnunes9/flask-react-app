@@ -35,20 +35,20 @@ Em resumo, o React simplifica o processo de construção de interfaces de usuár
 
 - Crie os diretórios 'api' e 'frontend'.
 
-- Crie o arquivo 'app.py' e copie o conteúdo deste mesmo arquivo presente neste repositório.
+- Crie o arquivo 'app.py' e copie o conteúdo desse mesmo arquivo presente neste repositório.
 
-- Em 'api/' crie o arquivo 'comment_handler.py' e copie o conteúdo deste mesmo arquivo deste repositório.
+- Em 'api/' crie o arquivo 'comment_handler.py' e copie o conteúdo desse mesmo arquivo deste repositório.
 
 - Nesse momento já é possível testar a API. Repare que somente a rota default '/' não é funcional.
 
-- Utilize o postman para testar a api via requisição POST. Não se esqueça de deixar porta como 'pública'. Use
+- Utilize o postman para testar a api via requisição POST. Não se esqueça de deixar a porta como 'pública'. Use
 a rota correta e envie a requisição JSON com o seguinte body:
-  * ` { "text" : "comentario via postman" } `
+  * `{ "text" : "comentario via postman" }`
 
-- Certifique de que o comentário foi criado.
+- Certifique-se de que o comentário foi criado.
 
-- Abrir um novo terminal. Esse novo terminal será usada para gerenciar o frontend. Entre no diretório frontend via terminal:
-  * ` cd frontend `
+- Abrir um novo terminal. Esse novo terminal será usada para gerenciar o frontend. Entre no diretório frontend, via terminal:
+  * `cd frontend`
 
 - Execute o seguinte comando para instalação do React no diretório corrente.
 
@@ -61,7 +61,7 @@ a rota correta e envie a requisição JSON com o seguinte body:
 
 - Editar o arquivo 'public/index.html' e substituir TODO o conteúdo pelo conteúdo em 'static/index.html' neste repositório. Em seguida, teste a rota default.
 
-- No diretório 'src' edite o arquivo 'App.js'. Substitua todo o conteúdo por aquele em 'static/App.js'. Aguarde a discussão com o professor.
+- No diretório 'src' edite o arquivo 'App.js'. Substitua todo o conteúdo pelo conteúdo do arquivo 'static/App.js' neste repositório. Aguarde a discussão com o professor.
 
 - Podemos deixar nosso frontend online. Basta executar no terminal do frontend:
   * `npm start`
